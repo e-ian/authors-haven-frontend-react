@@ -32,6 +32,8 @@ export class EditProfile extends Component {
   componentWillMount() {
     const { full_name, bio, image } = this.props.profile;
     this.setState({ full_name, bio, image });
+    console.log("....", this.props);
+    
   }
   handleNameChange(event) {
     const { value } = event.target;
